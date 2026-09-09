@@ -1,0 +1,1333 @@
+<!-- SEO TITLE (add via WordPress SEO plugin): Online Degree Courses in India | BA, BBA, BCA, BCom, MBA & More -->
+<!-- META DESCRIPTION (add via WordPress SEO plugin): Explore online degree courses in India with Anywhere Degree. Find online BA, BBA, BCA, BCom, MBA, MCom and other undergraduate and postgraduate programs. Get admission guidance today. -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+/* ==========================================================================
+   1. VARIABLES
+   ========================================================================== */
+.ad-page {
+  --ad-green: #204F33;
+  --ad-green-dark: #12301F;
+  --ad-green-tint: #EAF1EC;
+  --ad-gold: #C89A3B;
+  --ad-gold-light: #E9CE8E;
+  --ad-white: #FFFFFF;
+  --ad-cream: #FAF8F3;
+  --ad-gray: #5B5F5C;
+  --ad-gray-light: #8C8F8B;
+  --ad-border: #E3E0D4;
+  --ad-shadow: 0 10px 30px rgba(18, 48, 31, 0.08);
+  --ad-radius: 6px;
+  --ad-serif: 'Playfair Display', Georgia, serif;
+  --ad-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ==========================================================================
+   2. BASE / RESET (scoped)
+   ========================================================================== */
+.ad-page {
+  font-family: var(--ad-sans);
+  color: var(--ad-green-dark);
+  background: var(--ad-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+.ad-page *, .ad-page *::before, .ad-page *::after { box-sizing: inherit; }
+.ad-page ul { list-style: none; margin: 0; padding: 0; }
+.ad-page a { text-decoration: none; color: inherit; }
+.ad-page img { max-width: 100%; display: block; }
+.ad-page button { font-family: inherit; cursor: pointer; }
+.ad-page h1, .ad-page h2, .ad-page h3, .ad-page h4 {
+  font-family: var(--ad-serif);
+  color: var(--ad-green);
+  margin: 0;
+  line-height: 1.22;
+  font-weight: 700;
+}
+.ad-page p { margin: 0; color: var(--ad-gray); }
+.ad-page a:focus-visible,
+.ad-page button:focus-visible,
+.ad-page summary:focus-visible {
+  outline: 2px solid var(--ad-gold);
+  outline-offset: 2px;
+}
+
+.ad-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.ad-eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ad-gold);
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+}
+.ad-section { padding: 84px 0; }
+.ad-section--tint { background: var(--ad-cream); }
+.ad-section-head {
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+.ad-section-head p { margin-top: 14px; font-size: 16.5px; }
+.ad-section-head--center { margin-left: auto; margin-right: auto; text-align: center; }
+
+/* Buttons */
+.ad-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 15px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: var(--ad-radius);
+  border: 1.5px solid transparent;
+  transition: transform .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
+  white-space: nowrap;
+}
+.ad-btn--primary { background: var(--ad-green); color: var(--ad-white); }
+.ad-btn--primary:hover { background: var(--ad-green-dark); transform: translateY(-1px); }
+.ad-btn--gold { background: var(--ad-gold); color: var(--ad-green-dark); }
+.ad-btn--gold:hover { background: var(--ad-gold-light); transform: translateY(-1px); }
+.ad-btn--outline { background: transparent; border-color: var(--ad-green); color: var(--ad-green); }
+.ad-btn--outline:hover { background: var(--ad-green); color: var(--ad-white); }
+.ad-btn--ghost { background: transparent; border-color: var(--ad-border); color: var(--ad-green); }
+.ad-btn--ghost:hover { border-color: var(--ad-green); }
+.ad-btn--sm { padding: 10px 20px; font-size: 13.5px; }
+.ad-btn--full { width: 100%; }
+
+/* Image placeholders */
+.ad-image-placeholder {
+  border: 1.5px dashed var(--ad-gold);
+  background: linear-gradient(160deg, var(--ad-cream), var(--ad-green-tint));
+  border-radius: var(--ad-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--ad-green);
+  width: 100%;
+  aspect-ratio: var(--ad-ratio, 7/6);
+  padding: 24px;
+}
+.ad-image-placeholder svg { width: 40px; height: 40px; margin-bottom: 12px; opacity: .55; }
+.ad-image-placeholder span { font-family: var(--ad-serif); font-size: 16px; font-weight: 700; }
+.ad-image-placeholder small { font-size: 12.5px; color: var(--ad-gray-light); margin-top: 4px; }
+
+/* ==========================================================================
+   3. HEADER — LOGO + ACTION BUTTONS ONLY
+   ========================================================================== */
+.ad-header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: saturate(140%) blur(6px);
+  border-bottom: 1px solid var(--ad-border);
+}
+.ad-header img{
+  height: 150px!important;
+  width: 150px!important;
+}
+
+.ad-header__inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.ad-header__logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ad-header__logo img {
+  width: auto;
+  height: 52px;
+  max-width: 190px;
+  object-fit: contain;
+}
+
+.ad-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ad-header__actions .ad-btn {
+  min-height: 44px;
+}
+
+@media (max-width: 720px) {
+  .ad-header__inner {
+    min-height: 68px;
+    padding: 10px 16px;
+  }
+
+  .ad-header__logo img {
+    height: 44px;
+    max-width: 155px;
+  }
+
+  .ad-header__actions .ad-btn--gold {
+    display: none;
+  }
+
+  .ad-header__actions .ad-btn--outline {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+/* ==========================================================================
+   4. HERO
+   ========================================================================== */
+.ad-hero {
+  background: linear-gradient(180deg, var(--ad-cream) 0%, var(--ad-white) 78%);
+  padding: 82px 0 90px;
+  border-bottom: 1px solid var(--ad-border);
+}
+.ad-hero__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 60px;
+  align-items: center;
+}
+.ad-hero h1 {
+  font-size: 46px;
+  letter-spacing: -0.01em;
+}
+.ad-hero h1 em {
+  font-style: normal;
+  color: var(--ad-gold);
+}
+.ad-hero__lead {
+  margin-top: 22px;
+  font-size: 17.5px;
+  max-width: 520px;
+}
+.ad-hero__ctas {
+  margin-top: 34px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.ad-hero__meta {
+  margin-top: 40px;
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.ad-hero__meta div { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--ad-green-dark); font-weight: 500; }
+.ad-hero__meta svg { width: 18px; height: 18px; color: var(--ad-gold); flex-shrink: 0; }
+.ad-hero__visual { position: relative; }
+.ad-hero__visual::before {
+  content: "";
+  position: absolute;
+  top: -18px; left: -18px;
+  width: 100%; height: 100%;
+  border: 1.5px solid var(--ad-gold);
+  border-radius: var(--ad-radius);
+  z-index: 0;
+}
+.ad-hero__visual .ad-image-placeholder { position: relative; z-index: 1; --ad-ratio: 7/6; }
+
+/* ==========================================================================
+   5. TRUST STRIP
+   ========================================================================== */
+.ad-trust {
+  border-bottom: 1px solid var(--ad-border);
+  background: var(--ad-white);
+}
+.ad-trust__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.ad-trust__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 26px 22px;
+  border-right: 1px solid var(--ad-border);
+}
+.ad-trust__item:last-child { border-right: none; }
+.ad-trust__item svg { width: 26px; height: 26px; color: var(--ad-gold); flex-shrink: 0; }
+.ad-trust__item strong { display: block; font-family: var(--ad-serif); font-size: 15.5px; color: var(--ad-green); }
+.ad-trust__item span { font-size: 13px; color: var(--ad-gray-light); }
+
+/* ==========================================================================
+   6. PROGRAMS
+   ========================================================================== */
+.ad-programs__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+.ad-course-card {
+  background: var(--ad-white);
+  border: 1px solid var(--ad-border);
+  border-radius: var(--ad-radius);
+  padding: 30px 26px;
+  transition: box-shadow .2s ease, border-color .2s ease, transform .2s ease;
+  display: flex;
+  flex-direction: column;
+}
+.ad-course-card:hover {
+  box-shadow: var(--ad-shadow);
+  border-color: var(--ad-gold);
+  transform: translateY(-3px);
+}
+.ad-course-card__tag {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--ad-green);
+  background: var(--ad-green-tint);
+  padding: 5px 11px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+.ad-course-card h3 {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.ad-course-card p { font-size: 14.5px; }
+.ad-course-card__suit {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--ad-border);
+  font-size: 13px;
+}
+.ad-course-card__suit b { color: var(--ad-green); font-weight: 600; }
+.ad-course-card .ad-btn { margin-top: 20px; align-self: flex-start; }
+
+.ad-secondary-head {
+  margin: 60px 0 28px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+.ad-secondary-head h3 { font-size: 24px; }
+.ad-secondary-head::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--ad-border);
+}
+.ad-programs__grid--secondary {
+  grid-template-columns: repeat(5, 1fr);
+}
+.ad-course-card--compact { padding: 24px 20px; }
+.ad-course-card--compact h3 { font-size: 17px; }
+.ad-course-card--compact p { font-size: 13.5px; }
+
+/* ==========================================================================
+   7. WHY US
+   ========================================================================== */
+.ad-why__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 26px;
+}
+.ad-feature {
+  padding: 8px 0;
+}
+.ad-feature__icon {
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ad-gold);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 18px;
+}
+.ad-feature__icon svg { width: 22px; height: 22px; color: var(--ad-green); }
+.ad-feature h3 { font-size: 18.5px; margin-bottom: 8px; }
+.ad-feature p { font-size: 14.5px; }
+
+/* ==========================================================================
+   8. AUDIENCE
+   ========================================================================== */
+.ad-audience__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+.ad-audience-card {
+  background: var(--ad-white);
+  border: 1px solid var(--ad-border);
+  border-radius: var(--ad-radius);
+  padding: 26px 20px;
+  text-align: center;
+  transition: border-color .2s ease, transform .2s ease;
+}
+.ad-audience-card:hover { border-color: var(--ad-gold); transform: translateY(-2px); }
+.ad-audience-card__icon {
+  width: 44px; height: 44px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: var(--ad-green-tint);
+  display: flex; align-items: center; justify-content: center;
+}
+.ad-audience-card__icon svg { width: 20px; height: 20px; color: var(--ad-green); }
+.ad-audience-card h3 { font-size: 15.5px; margin-bottom: 8px; }
+.ad-audience-card p { font-size: 13px; }
+
+/* ==========================================================================
+   9. BENEFITS
+   ========================================================================== */
+.ad-benefits {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 56px;
+  align-items: center;
+}
+.ad-benefits__list { margin-top: 26px; display: flex; flex-direction: column; gap: 16px; }
+.ad-benefits__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--ad-green-dark);
+}
+.ad-benefits__list svg {
+  width: 20px; height: 20px;
+  color: var(--ad-gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   10. HOW IT WORKS
+   ========================================================================== */
+.ad-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+.ad-steps::before {
+  content: "";
+  position: absolute;
+  top: 26px; left: 6%; right: 6%;
+  height: 1px;
+  background: var(--ad-border);
+  z-index: 0;
+}
+.ad-step {
+  position: relative;
+  z-index: 1;
+  padding: 0 18px;
+  text-align: left;
+}
+.ad-step__num {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: var(--ad-white);
+  border: 1.5px solid var(--ad-gold);
+  color: var(--ad-green);
+  font-family: var(--ad-serif);
+  font-weight: 700;
+  font-size: 18px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+}
+.ad-step h3 { font-size: 17.5px; margin-bottom: 8px; }
+.ad-step p { font-size: 14px; }
+
+/* ==========================================================================
+   11. ENQUIRY / CF7
+   ========================================================================== */
+.ad-enquiry__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.ad-enquiry__benefits { margin-top: 24px; display: flex; flex-direction: column; gap: 14px; }
+.ad-enquiry__benefits div { display: flex; gap: 10px; align-items: flex-start; font-size: 14.5px; color: var(--ad-green-dark); }
+.ad-enquiry__benefits svg { width: 18px; height: 18px; color: var(--ad-gold); margin-top: 2px; flex-shrink: 0; }
+.ad-enquiry__form-wrap {
+  background: var(--ad-white);
+  border: 1px solid var(--ad-border);
+  border-radius: var(--ad-radius);
+  padding: 34px;
+  box-shadow: var(--ad-shadow);
+}
+.ad-enquiry__form-wrap h3 { font-size: 19px; margin-bottom: 6px; }
+.ad-enquiry__form-wrap > p { font-size: 13.5px; margin-bottom: 20px; }
+
+/* Contact Form 7 styling, scoped to this section */
+.ad-page #ad-enquiry .wpcf7-form { display: flex; flex-direction: column; gap: 16px; }
+.ad-page #ad-enquiry .wpcf7-form p { margin: 0; color: inherit; }
+.ad-page #ad-enquiry label { display: block; font-size: 13px; font-weight: 600; color: var(--ad-green); margin-bottom: 6px; }
+.ad-page #ad-enquiry .wpcf7-form-control {
+  width: 100%;
+  font-family: var(--ad-sans);
+  font-size: 14.5px;
+  padding: 13px 14px;
+  border: 1.5px solid var(--ad-border);
+  border-radius: 4px;
+  background: var(--ad-cream);
+  color: var(--ad-green-dark);
+  transition: border-color .18s ease, background .18s ease;
+}
+.ad-page #ad-enquiry .wpcf7-form-control:focus {
+  outline: none;
+  border-color: var(--ad-gold);
+  background: var(--ad-white);
+}
+.ad-page #ad-enquiry select.wpcf7-form-control { appearance: none; background-image: none; }
+.ad-page #ad-enquiry textarea.wpcf7-form-control { min-height: 100px; resize: vertical; }
+.ad-page #ad-enquiry .wpcf7-submit {
+  margin-top: 4px;
+  width: 100%;
+  background: var(--ad-green);
+  color: var(--ad-white);
+  border: none;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background .18s ease;
+}
+.ad-page #ad-enquiry .wpcf7-submit:hover { background: var(--ad-green-dark); }
+.ad-page #ad-enquiry .wpcf7-not-valid-tip { color: #A3452F; font-size: 12.5px; margin-top: 4px; }
+.ad-page #ad-enquiry .wpcf7-response-output {
+  border-radius: 4px;
+  border: 1px solid var(--ad-border);
+  font-size: 13.5px;
+  padding: 10px 14px;
+  margin-top: 14px;
+}
+.ad-page #ad-enquiry .wpcf7-spinner { margin-left: 10px; }
+
+/* ==========================================================================
+   12. SEO CONTENT
+   ========================================================================== */
+.ad-seo-content {
+  max-width: 820px;
+}
+.ad-seo-content h2 { font-size: 32px; margin-bottom: 22px; }
+.ad-seo-content h3 { font-size: 20px; margin-top: 30px; margin-bottom: 10px; color: var(--ad-green); }
+.ad-seo-content p { margin-bottom: 16px; font-size: 15.5px; }
+
+/* ==========================================================================
+   13. FAQ
+   ========================================================================== */
+.ad-faq__list { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.ad-faq__list details {
+  background: var(--ad-white);
+  border: 1px solid var(--ad-border);
+  border-radius: var(--ad-radius);
+  padding: 6px 22px;
+}
+.ad-faq__list details[open] { border-color: var(--ad-gold); }
+.ad-faq__list summary {
+  padding: 18px 0;
+  font-family: var(--ad-serif);
+  font-weight: 700;
+  font-size: 16.5px;
+  color: var(--ad-green);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.ad-faq__list summary::-webkit-details-marker { display: none; }
+.ad-faq__list summary::after {
+  content: "+";
+  font-size: 22px;
+  color: var(--ad-gold);
+  flex-shrink: 0;
+  transition: transform .2s ease;
+}
+.ad-faq__list details[open] summary::after { content: "\2212"; }
+.ad-faq__list .ad-faq__answer { padding: 0 0 20px; font-size: 14.5px; color: var(--ad-gray); }
+
+/* ==========================================================================
+   14. FINAL CTA
+   ========================================================================== */
+.ad-final-cta {
+  background: var(--ad-green);
+  padding: 74px 0;
+  text-align: center;
+}
+.ad-final-cta h2 { color: var(--ad-white); font-size: 32px; }
+.ad-final-cta p { color: rgba(255,255,255,0.82); max-width: 560px; margin: 16px auto 0; font-size: 16px; }
+.ad-final-cta__ctas { margin-top: 30px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.ad-final-cta .ad-btn--outline { border-color: rgba(255,255,255,0.5); color: var(--ad-white); }
+.ad-final-cta .ad-btn--outline:hover { background: var(--ad-white); color: var(--ad-green); }
+
+/* ==========================================================================
+   15. FOOTER
+   ========================================================================== */
+.ad-footer {
+  background: var(--ad-green-dark);
+  color: rgba(255,255,255,0.78);
+  padding: 64px 0 26px;
+}
+.ad-footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
+  gap: 40px;
+}
+.ad-footer__brand img { height: 42px; filter: brightness(0) invert(1); opacity: .92; }
+.ad-footer__brand p { color: rgba(255,255,255,0.6); margin-top: 14px; font-size: 14px; max-width: 260px; }
+.ad-footer h4 { color: var(--ad-gold-light); font-family: var(--ad-sans); font-size: 13.5px; font-weight: 700; letter-spacing: .02em; margin-bottom: 18px; }
+.ad-footer ul { display: flex; flex-direction: column; gap: 11px; }
+.ad-footer a { font-size: 14px; color: rgba(255,255,255,0.72); transition: color .18s ease; }
+.ad-footer a:hover { color: var(--ad-gold-light); }
+.ad-footer__contact li { display: flex; align-items: center; gap: 10px; }
+.ad-footer__contact svg { width: 16px; height: 16px; color: var(--ad-gold); flex-shrink: 0; }
+.ad-footer__bottom {
+  margin-top: 54px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 12.5px;
+  color: rgba(255,255,255,0.5);
+}
+.ad-footer__bottom-links { display: flex; gap: 20px; }
+.ad-footer__bottom-links a { font-size: 12.5px; color: rgba(255,255,255,0.55); }
+.ad-footer__disclaimer {
+  margin-top: 22px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.42);
+  max-width: 920px;
+}
+
+/* ==========================================================================
+   16. FLOATING CONTACT BUTTONS
+   ========================================================================== */
+.ad-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+}
+.ad-float__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 8px 22px rgba(18,48,31,0.22);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.ad-float__btn:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(18,48,31,0.28); }
+.ad-float__btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+.ad-float__btn--call { background: var(--ad-green); color: var(--ad-white); }
+.ad-float__btn--whatsapp { background: #ffffff; color: var(--ad-green-dark); border: 1.5px solid var(--ad-green); }
+.ad-float__btn--whatsapp svg { color: #25a15a; }
+
+/* ==========================================================================
+   17. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .ad-hero__grid { grid-template-columns: 1fr; gap: 40px; }
+  .ad-hero__visual { order: -1; max-width: 460px; margin: 0 auto; }
+  .ad-programs__grid { grid-template-columns: repeat(2, 1fr); }
+  .ad-programs__grid--secondary { grid-template-columns: repeat(3, 1fr); }
+  .ad-why__grid { grid-template-columns: repeat(2, 1fr); }
+  .ad-audience__grid { grid-template-columns: repeat(3, 1fr); }
+  .ad-benefits { grid-template-columns: 1fr; gap: 36px; }
+  .ad-benefits__visual { max-width: 480px; }
+  .ad-steps { grid-template-columns: repeat(2, 1fr); gap: 36px 0; }
+  .ad-steps::before { display: none; }
+  .ad-enquiry__grid { grid-template-columns: 1fr; gap: 40px; }
+  .ad-footer__grid { grid-template-columns: 1fr 1fr; gap: 36px 24px; }
+}
+
+@media (max-width: 860px) {
+  .ad-nav__links,
+  .ad-nav__cta .ad-btn--outline {
+    display: none;
+  }
+
+  .ad-nav__toggle-label {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .ad-nav__mobile {
+    display: block;
+    flex: 0 0 100%;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 24px;
+    background: var(--ad-white);
+    border-top: 0 solid transparent;
+    transition: max-height .3s ease, padding .3s ease, border-color .3s ease;
+  }
+
+  .ad-nav__toggle:checked ~ .ad-nav__mobile {
+    max-height: 420px;
+    padding: 14px 24px 22px;
+    border-top: 1px solid var(--ad-border);
+  }
+
+  .ad-nav__mobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ad-nav__mobile a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ad-green-dark);
+  }
+
+  .ad-nav__mobile .ad-btn {
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 720px) {
+  .ad-section { padding: 60px 0; }
+  .ad-hero { padding: 54px 0 60px; }
+  .ad-hero h1 { font-size: 32px; }
+  .ad-hero__lead { font-size: 16px; }
+  .ad-trust__row { grid-template-columns: 1fr 1fr; }
+  .ad-trust__item { border-right: none; border-bottom: 1px solid var(--ad-border); padding: 20px 16px; }
+  .ad-programs__grid { grid-template-columns: 1fr; }
+  .ad-programs__grid--secondary { grid-template-columns: 1fr 1fr; }
+  .ad-why__grid { grid-template-columns: 1fr; }
+  .ad-audience__grid { grid-template-columns: 1fr 1fr; }
+  .ad-steps { grid-template-columns: 1fr; gap: 30px; }
+  .ad-footer__grid { grid-template-columns: 1fr; gap: 32px; }
+  .ad-footer__bottom { flex-direction: column; align-items: flex-start; }
+  .ad-final-cta h2 { font-size: 26px; }
+  .ad-float { right: 14px; bottom: 14px; }
+  .ad-float__btn span { display: none; }
+  .ad-float__btn { padding: 13px; border-radius: 50%; }
+  .ad-seo-content h2 { font-size: 26px; }
+}
+</style>
+
+<div class="ad-page">
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="ad-header">
+    <div class="ad-header__inner">
+
+      <a href="#ad-home" class="ad-header__logo" aria-label="Anywhere Degree home">
+        <!-- Keep logo.png in the same folder as this HTML file, or change this path. -->
+        <img src="logo.png" alt="Anywhere Degree logo">
+      </a>
+
+      <div class="ad-header__actions">
+        <a href="tel:+919849432404" class="ad-btn ad-btn--outline ad-btn--sm">
+          +91 98494 32404
+        </a>
+        <a href="#ad-enquiry" class="ad-btn ad-btn--gold ad-btn--sm">
+          Get Admission Guidance
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+<!-- ============================ HERO ============================ -->
+  <section class="ad-hero" id="ad-home">
+    <div class="ad-shell ad-hero__grid">
+      <div>
+        <span class="ad-eyebrow">Online Degree Programs &middot; India</span>
+        <h1>Build your future with the right <em>online degree</em></h1>
+        <p class="ad-hero__lead">
+          Explore flexible online degree courses designed for students, graduates and working professionals.
+          Discover undergraduate and postgraduate online degree programs and get guidance through every step
+          of your admission journey.
+        </p>
+        <div class="ad-hero__ctas">
+          <a href="#ad-programs" class="ad-btn ad-btn--primary">Explore Online Degrees</a>
+          <a href="#ad-enquiry" class="ad-btn ad-btn--outline">Get Admission Guidance</a>
+        </div>
+        <div class="ad-hero__meta">
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l9 4.5-9 4.5-9-4.5L12 3z"/><path d="M6.5 9.7v4.3c0 1.7 2.5 3 5.5 3s5.5-1.3 5.5-3V9.7"/></svg>
+            <span>Undergraduate &amp; Postgraduate Options</span>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+            <span>Learn On Your Own Schedule</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ad-hero__visual">
+        <div class="ad-image-placeholder" style="--ad-ratio:7/6;">
+          <!-- ALT TEXT SUGGESTION: Students exploring online degree programs -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="14" rx="1.5"/><path d="M3 9h18"/><circle cx="8" cy="13.5" r="1.6"/><path d="M13 12.5h5M13 15h3.5"/></svg>
+          <span>IMAGE PLACEHOLDER</span>
+          <small>Recommended: 700 &times; 600 px &mdash; Hero student / online learning visual</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ TRUST STRIP ============================ -->
+  <section class="ad-trust" aria-label="Why students choose us">
+    <div class="ad-shell ad-trust__row">
+      <div class="ad-trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <div><strong>Flexible Learning</strong><span>Study at your own pace</span></div>
+      </div>
+      <div class="ad-trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 12 2a7 7 0 0 1 7 7.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+        <div><strong>Study From Anywhere</strong><span>Learn from any location</span></div>
+      </div>
+      <div class="ad-trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5a1 1 0 0 1 1-1h11l4 4v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg>
+        <div><strong>Multiple Degree Options</strong><span>UG &amp; PG programs</span></div>
+      </div>
+      <div class="ad-trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 1 1-4.1-7.3"/><path d="M21 4l-9 9-3-3"/></svg>
+        <div><strong>Admission Guidance</strong><span>Support at every step</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PROGRAMS ============================ -->
+  <section class="ad-section" id="ad-programs">
+    <div class="ad-shell">
+      <div class="ad-section-head">
+        <span class="ad-eyebrow">Programs</span>
+        <h2>Explore Online Degree Programs</h2>
+        <p>
+          Anywhere Degree helps you explore online degree courses across popular undergraduate and postgraduate
+          fields. Whether you are starting your academic journey or returning to education alongside a career,
+          our online education pathways in India are built around flexibility, so you can learn from anywhere
+          and at a pace that fits your life.
+        </p>
+      </div>
+
+      <div class="ad-programs__grid">
+
+        <article class="ad-course-card">
+          <span class="ad-course-card__tag">Undergraduate</span>
+          <h3>Online BA</h3>
+          <p>Explore the humanities, languages and social sciences through a flexible online Bachelor of Arts pathway suited to varied academic interests.</p>
+          <div class="ad-course-card__suit"><b>Suitable for:</b> Students and learners interested in the arts, humanities and social sciences.</div>
+          <a href="#ad-enquiry" class="ad-btn ad-btn--outline ad-btn--sm">Get BA Details</a>
+        </article>
+
+        <article class="ad-course-card">
+          <span class="ad-course-card__tag">Undergraduate</span>
+          <h3>Online BBA</h3>
+          <p>Build a foundation in business, management, marketing and entrepreneurship through a flexible online learning pathway.</p>
+          <div class="ad-course-card__suit"><b>Suitable for:</b> Students and learners interested in business and management.</div>
+          <a href="#ad-enquiry" class="ad-btn ad-btn--outline ad-btn--sm">Get BBA Details</a>
+        </article>
+
+        <article class="ad-course-card">
+          <span class="ad-course-card__tag">Undergraduate</span>
+          <h3>Online BCA</h3>
+          <p>Study computer applications, programming fundamentals and information technology concepts through an online undergraduate pathway.</p>
+          <div class="ad-course-card__suit"><b>Suitable for:</b> Students interested in computer applications and IT.</div>
+          <a href="#ad-enquiry" class="ad-btn ad-btn--outline ad-btn--sm">Get BCA Details</a>
+        </article>
+
+        <article class="ad-course-card">
+          <span class="ad-course-card__tag">Undergraduate</span>
+          <h3>Online BCom</h3>
+          <p>Develop a strong foundation in commerce, accounting and finance through a flexible online Bachelor of Commerce pathway.</p>
+          <div class="ad-course-card__suit"><b>Suitable for:</b> Students interested in commerce, accounting and finance.</div>
+          <a href="#ad-enquiry" class="ad-btn ad-btn--outline ad-btn--sm">Get BCom Details</a>
+        </article>
+
+        <article class="ad-course-card">
+          <span class="ad-course-card__tag">Postgraduate</span>
+          <h3>Online MBA</h3>
+          <p>Advance your management knowledge across strategy, operations, finance and leadership through an online Master of Business Administration pathway.</p>
+          <div class="ad-course-card__suit"><b>Suitable for:</b> Working professionals and graduates seeking postgraduate management education.</div>
+          <a href="#ad-enquiry" class="ad-btn ad-btn--outline ad-btn--sm">Get MBA Details</a>
+        </article>
+
+        <article class="ad-course-card">
+          <span class="ad-course-card__tag">Postgraduate</span>
+          <h3>Online MCom</h3>
+          <p>Deepen your understanding of advanced commerce, accounting and financial concepts through an online Master of Commerce pathway.</p>
+          <div class="ad-course-card__suit"><b>Suitable for:</b> Graduates seeking postgraduate qualifications in commerce.</div>
+          <a href="#ad-enquiry" class="ad-btn ad-btn--outline ad-btn--sm">Get MCom Details</a>
+        </article>
+
+      </div>
+
+      <div class="ad-secondary-head">
+        <h3>More Online Degree Options</h3>
+      </div>
+
+      <div class="ad-programs__grid ad-programs__grid--secondary">
+
+        <article class="ad-course-card ad-course-card--compact">
+          <span class="ad-course-card__tag">UG</span>
+          <h3>Online BSc</h3>
+          <p>Explore science-focused undergraduate learning through a flexible online format.</p>
+          <a href="#ad-enquiry" class="ad-btn ad-btn--ghost ad-btn--sm">Get Details</a>
+        </article>
+
+        <article class="ad-course-card ad-course-card--compact">
+          <span class="ad-course-card__tag">PG</span>
+          <h3>Online MA</h3>
+          <p>Pursue postgraduate study in the arts and humanities online.</p>
+          <a href="#ad-enquiry" class="ad-btn ad-btn--ghost ad-btn--sm">Get Details</a>
+        </article>
+
+        <article class="ad-course-card ad-course-card--compact">
+          <span class="ad-course-card__tag">PG</span>
+          <h3>Online MSW</h3>
+          <p>Study social work principles and practice through an online postgraduate pathway.</p>
+          <a href="#ad-enquiry" class="ad-btn ad-btn--ghost ad-btn--sm">Get Details</a>
+        </article>
+
+        <article class="ad-course-card ad-course-card--compact">
+          <span class="ad-course-card__tag">UG</span>
+          <h3>Online BLISc</h3>
+          <p>Learn library and information science fundamentals through flexible online study.</p>
+          <a href="#ad-enquiry" class="ad-btn ad-btn--ghost ad-btn--sm">Get Details</a>
+        </article>
+
+        <article class="ad-course-card ad-course-card--compact">
+          <span class="ad-course-card__tag">PG</span>
+          <h3>Online MLISc</h3>
+          <p>Advance your knowledge of library and information science at the postgraduate level, online.</p>
+          <a href="#ad-enquiry" class="ad-btn ad-btn--ghost ad-btn--sm">Get Details</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WHY CHOOSE US ============================ -->
+  <section class="ad-section ad-section--tint" id="ad-why-us">
+    <div class="ad-shell">
+      <div class="ad-section-head ad-section-head--center">
+        <span class="ad-eyebrow">Why Anywhere Degree</span>
+        <h2>Why Choose Anywhere Degree?</h2>
+        <p>A dedicated approach to helping you find and pursue the right online degree, with guidance at every stage.</p>
+      </div>
+
+      <div class="ad-why__grid">
+        <div class="ad-feature">
+          <div class="ad-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+          <h3>Flexible Online Learning</h3>
+          <p>Explore learning options designed to fit around your schedule and commitments.</p>
+        </div>
+        <div class="ad-feature">
+          <div class="ad-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 12 2a7 7 0 0 1 7 7.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg></div>
+          <h3>Study From Anywhere</h3>
+          <p>Discover degree programs that let you continue your education from wherever you are.</p>
+        </div>
+        <div class="ad-feature">
+          <div class="ad-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5a1 1 0 0 1 1-1h11l4 4v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg></div>
+          <h3>Multiple Degree Options</h3>
+          <p>Explore undergraduate and postgraduate online degree programs across different fields.</p>
+        </div>
+        <div class="ad-feature">
+          <div class="ad-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 1 1-4.1-7.3"/><path d="M21 4l-9 9-3-3"/></svg></div>
+          <h3>Admission Guidance</h3>
+          <p>Get assistance understanding program options, eligibility, fees and admission requirements.</p>
+        </div>
+        <div class="ad-feature">
+          <div class="ad-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="13" rx="1.5"/><path d="M8 6V4.5A1.5 1.5 0 0 1 9.5 3h5A1.5 1.5 0 0 1 16 4.5V6"/></svg></div>
+          <h3>Designed for Working Professionals</h3>
+          <p>Explore flexible learning pathways without putting your professional commitments on hold.</p>
+        </div>
+        <div class="ad-feature">
+          <div class="ad-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 15l4-6 4 3 4-7 4 5"/><path d="M4 19h16"/></svg></div>
+          <h3>Career-Focused Learning</h3>
+          <p>Choose academic pathways aligned with your educational and career goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WHO IS IT FOR ============================ -->
+  <section class="ad-section">
+    <div class="ad-shell">
+      <div class="ad-section-head ad-section-head--center">
+        <span class="ad-eyebrow">Audience</span>
+        <h2>Who Can Benefit From an Online Degree?</h2>
+        <p>Online degree education is built to serve a wide range of learners at different stages of life and career.</p>
+      </div>
+
+      <div class="ad-audience__grid">
+        <div class="ad-audience-card">
+          <div class="ad-audience-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l9 4.5-9 4.5-9-4.5L12 3z"/><path d="M6.5 9.7v4.3c0 1.7 2.5 3 5.5 3s5.5-1.3 5.5-3V9.7"/></svg></div>
+          <h3>Students</h3>
+          <p>Begin your higher education journey with flexible online learning options.</p>
+        </div>
+        <div class="ad-audience-card">
+          <div class="ad-audience-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="13" rx="1.5"/><path d="M8 6V4.5A1.5 1.5 0 0 1 9.5 3h5A1.5 1.5 0 0 1 16 4.5V6"/></svg></div>
+          <h3>Working Professionals</h3>
+          <p>Continue your education while managing your career and professional responsibilities.</p>
+        </div>
+        <div class="ad-audience-card">
+          <div class="ad-audience-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5a1 1 0 0 1 1-1h11l4 4v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg></div>
+          <h3>Graduates</h3>
+          <p>Explore postgraduate online degree programs to expand your academic qualifications.</p>
+        </div>
+        <div class="ad-audience-card">
+          <div class="ad-audience-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12l6 6 12-12"/></svg></div>
+          <h3>Career Switchers</h3>
+          <p>Build new knowledge and qualifications as you move toward a new career direction.</p>
+        </div>
+        <div class="ad-audience-card">
+          <div class="ad-audience-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 15l4-6 4 3 4-7 4 5"/><path d="M4 19h16"/></svg></div>
+          <h3>Entrepreneurs</h3>
+          <p>Develop business and management knowledge alongside your professional journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ BENEFITS ============================ -->
+  <section class="ad-section ad-section--tint">
+    <div class="ad-shell ad-benefits">
+      <div class="ad-benefits__visual">
+        <div class="ad-image-placeholder" style="--ad-ratio:13/9;">
+          <!-- ALT TEXT SUGGESTION: Online education for working professionals -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="14" rx="1.5"/><path d="M3 9h18"/><circle cx="8" cy="13.5" r="1.6"/><path d="M13 12.5h5M13 15h3.5"/></svg>
+          <span>IMAGE PLACEHOLDER</span>
+          <small>Recommended: 650 &times; 450 px &mdash; Online learning visual</small>
+        </div>
+      </div>
+      <div>
+        <span class="ad-eyebrow">Benefits</span>
+        <h2>Why Consider an Online Degree?</h2>
+        <p style="margin-top:14px;">Online degree programs are designed around flexibility, making higher education more accessible for a wide range of learners.</p>
+        <ul class="ad-benefits__list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l6 6 12-12"/></svg> Flexible study schedules that fit around your commitments</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l6 6 12-12"/></svg> Learn from anywhere with an internet-enabled device</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l6 6 12-12"/></svg> Convenient for working professionals continuing their careers</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l6 6 12-12"/></svg> Access to multiple undergraduate and postgraduate degree options</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l6 6 12-12"/></svg> A digital learning environment built for self-paced study</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l6 6 12-12"/></svg> Ability to balance education with family and other responsibilities</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ HOW IT WORKS ============================ -->
+  <section class="ad-section" id="ad-how-it-works">
+    <div class="ad-shell">
+      <div class="ad-section-head ad-section-head--center">
+        <span class="ad-eyebrow">Admission Journey</span>
+        <h2>How It Works</h2>
+        <p>A simple, guided path from exploring programs to beginning your online degree.</p>
+      </div>
+
+      <div class="ad-steps">
+        <div class="ad-step">
+          <div class="ad-step__num">01</div>
+          <h3>Explore Programs</h3>
+          <p>Browse online degree options based on your academic and career interests.</p>
+        </div>
+        <div class="ad-step">
+          <div class="ad-step__num">02</div>
+          <h3>Get Guidance</h3>
+          <p>Speak with an admission counsellor about program options and requirements.</p>
+        </div>
+        <div class="ad-step">
+          <div class="ad-step__num">03</div>
+          <h3>Complete Your Application</h3>
+          <p>Follow the required admission process for your selected program.</p>
+        </div>
+        <div class="ad-step">
+          <div class="ad-step__num">04</div>
+          <h3>Start Your Degree Journey</h3>
+          <p>Begin your online learning journey after completing the required admission steps.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:44px;">
+        <a href="#ad-enquiry" class="ad-btn ad-btn--primary">Get Admission Guidance</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ ENQUIRY / CF7 ============================ -->
+  <section class="ad-section ad-section--tint" id="ad-enquiry">
+    <div class="ad-shell ad-enquiry__grid">
+      <div>
+        <span class="ad-eyebrow">Admission Guidance</span>
+        <h2>Find the Right Online Degree for Your Career</h2>
+        <p style="margin-top:14px; font-size:16px;">
+          Not sure which online degree is right for you? Speak with our admission guidance team to understand
+          available programs, eligibility, fees and the admission process.
+        </p>
+        <div class="ad-enquiry__benefits">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l6 6 12-12"/></svg> Personalised guidance on program selection</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l6 6 12-12"/></svg> Clarity on eligibility and admission steps</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l6 6 12-12"/></svg> Support for students and working professionals</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l6 6 12-12"/></svg> No-obligation conversation with a counsellor</div>
+        </div>
+        <div style="margin-top:28px;">
+          <div class="ad-image-placeholder" style="--ad-ratio:6/5; max-width:420px;">
+            <!-- ALT TEXT SUGGESTION: Online degree admission guidance -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 12 2a7 7 0 0 1 7 7.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.3"/></svg>
+            <span>IMAGE PLACEHOLDER</span>
+            <small>Recommended: 600 &times; 500 px</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="ad-enquiry__form-wrap">
+        <h3>Get Free Admission Guidance</h3>
+        <p>Fill in your details and our team will get in touch with you.</p>
+
+        <!-- CONTACT FORM 7 — Replace YOUR_FORM_ID with your actual CF7 form ID -->
+        [contact-form-7 id="YOUR_FORM_ID" title="Online Degree Enquiry Form"]
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SEO CONTENT ============================ -->
+  <section class="ad-section">
+    <div class="ad-shell">
+      <div class="ad-seo-content">
+        <span class="ad-eyebrow">Learn More</span>
+        <h2>Online Degree Courses in India</h2>
+
+        <p>
+          An online degree is an academic qualification earned through a digital learning format rather than
+          full-time, in-person classroom attendance. Online degree courses in India have grown in popularity
+          because they allow learners to study lecture material, complete assignments and engage with academic
+          content through an internet-enabled device, on a schedule that fits around their existing commitments.
+          For many students, graduates and working professionals, this shift in format has made higher education
+          considerably more accessible.
+        </p>
+
+        <h3>Who Can Pursue an Online Degree?</h3>
+        <p>
+          Online degree programs are designed for a broad range of learners. Recent school leavers can begin an
+          online undergraduate degree as an alternative to a traditional on-campus program. Graduates looking to
+          build on their existing qualifications can explore an online postgraduate degree to deepen their
+          knowledge in a specific field. Working professionals who want to continue studying without stepping
+          away from their jobs often find that an online degree for working professionals fits naturally into
+          their weekly routine, since coursework can typically be accessed outside standard working hours.
+        </p>
+
+        <h3>Undergraduate Online Degree Programs</h3>
+        <p>
+          At the undergraduate level, popular online bachelor's degree options include the Online BA, Online BBA,
+          Online BCA and Online BCom, along with programs such as the Online BSc and Online BLISc. Each of these
+          undergraduate programs is structured around a specific subject area — from the humanities and business
+          management to computer applications, commerce, the sciences and library science — giving students the
+          opportunity to choose a path aligned with their interests and long-term goals.
+        </p>
+
+        <h3>Postgraduate Online Degree Programs</h3>
+        <p>
+          For learners who already hold an undergraduate qualification, postgraduate online degree programs such
+          as the Online MBA, Online MCom, Online MA, Online MSW and Online MLISc offer a way to specialise
+          further. An online master's degree can be particularly useful for professionals aiming to strengthen
+          their expertise in management, commerce, social work, the arts or library and information science
+          while continuing to work.
+        </p>
+
+        <h3>Benefits of Flexible Online Education</h3>
+        <p>
+          The core advantage of online education lies in its flexibility. Rather than being tied to a fixed
+          campus location and timetable, students pursuing an online degree can typically structure their study
+          time around work, family and other responsibilities. This makes online graduation programs an
+          appealing option for those who value convenience and self-paced learning, without necessarily
+          compromising on the depth of the subject matter being studied.
+        </p>
+
+        <h3>How to Choose the Right Online Degree</h3>
+        <p>
+          Choosing the right online degree course involves considering a few key factors: your career goals and
+          the subject areas that interest you, whether you are looking at an undergraduate or postgraduate
+          qualification, how much time you can realistically commit to study each week, and what admission
+          requirements apply to the program you are interested in. Because programs, eligibility criteria, fees
+          and university options can vary, it is worth speaking with an admission counsellor before making a
+          final decision.
+        </p>
+
+        <h3>Online Degree Admission Guidance</h3>
+        <p>
+          Anywhere Degree is an online degree discovery and admission-guidance platform. We help students,
+          graduates and working professionals understand the online degree programs available to them and guide
+          them through the steps involved in applying. Program details, including eligibility, fees and
+          university options, are available on request — speak with our admission guidance team to get
+          clear, personalised information before you apply.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FAQ ============================ -->
+  <section class="ad-section ad-section--tint" id="ad-faq">
+    <div class="ad-shell">
+      <div class="ad-section-head ad-section-head--center">
+        <span class="ad-eyebrow">FAQs</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions about online degree courses, admission and how Anywhere Degree can help.</p>
+      </div>
+
+      <div class="ad-faq__list">
+        <details>
+          <summary>What is an online degree?</summary>
+          <div class="ad-faq__answer">An online degree is an academic qualification earned through online learning rather than full-time, in-person campus attendance. Coursework, lectures and assignments are typically accessed through a digital platform.</div>
+        </details>
+        <details>
+          <summary>Who can pursue an online degree?</summary>
+          <div class="ad-faq__answer">Online degree programs are suitable for students beginning their higher education, graduates seeking postgraduate qualifications, working professionals, career switchers and entrepreneurs looking to build new knowledge.</div>
+        </details>
+        <details>
+          <summary>Are online degree courses suitable for working professionals?</summary>
+          <div class="ad-faq__answer">Yes. Online degree courses are structured around flexibility, which often makes them a practical option for working professionals who want to continue their education without pausing their career.</div>
+        </details>
+        <details>
+          <summary>What online degree programs are available through Anywhere Degree?</summary>
+          <div class="ad-faq__answer">Anywhere Degree provides guidance on a range of online degree programs, including Online BA, BBA, BCA, BCom, MBA, MCom, BSc, MA, MSW, BLISc and MLISc. Speak with our team for current program availability.</div>
+        </details>
+        <details>
+          <summary>Can I pursue an online bachelor's degree after completing 12th?</summary>
+          <div class="ad-faq__answer">Many online bachelor's degree programs are open to students who have completed their 12th standard. Eligibility criteria can vary by program, so it's best to confirm details with an admission counsellor.</div>
+        </details>
+        <details>
+          <summary>Can graduates pursue an online master's degree?</summary>
+          <div class="ad-faq__answer">Yes, graduates can explore online postgraduate degree programs such as an online MBA, MCom, MA, MSW or MLISc to build on their existing academic qualifications.</div>
+        </details>
+        <details>
+          <summary>How does online degree admission work?</summary>
+          <div class="ad-faq__answer">The admission process generally involves exploring available programs, speaking with an admission counsellor, submitting the required application details and completing any further steps specific to your chosen program.</div>
+        </details>
+        <details>
+          <summary>How do I choose the right online degree course?</summary>
+          <div class="ad-faq__answer">Consider your career goals, areas of interest, whether you need an undergraduate or postgraduate qualification, and how much time you can commit to study. Our admission guidance team can help you weigh these factors.</div>
+        </details>
+        <details>
+          <summary>What should I check before enrolling in an online degree?</summary>
+          <div class="ad-faq__answer">Before enrolling, it's advisable to confirm program eligibility, fees, university options and admission requirements directly with an admission counsellor, as these details vary by program.</div>
+        </details>
+        <details>
+          <summary>How can Anywhere Degree help with admission guidance?</summary>
+          <div class="ad-faq__answer">Anywhere Degree helps you explore online degree options and connects you with admission guidance so you can make an informed decision about your program, eligibility and next steps.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FINAL CTA ============================ -->
+  <section class="ad-final-cta">
+    <div class="ad-shell">
+      <h2>Ready to Explore Your Online Degree?</h2>
+      <p>Take the next step toward your academic and career goals. Explore online degree programs and get guidance on choosing the right path for you.</p>
+      <div class="ad-final-cta__ctas">
+        <a href="#ad-enquiry" class="ad-btn ad-btn--gold">Get Admission Guidance</a>
+        <a href="tel:+919849432404" class="ad-btn ad-btn--outline">Call +91 98494 32404</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="ad-footer" id="ad-contact">
+    <div class="ad-shell ad-footer__grid">
+      <div class="ad-footer__brand">
+        <img src="logo.png" alt="Anywhere Degree logo">
+        <p>Online Degrees. Anywhere. Anytime. Explore online degree courses and get admission guidance for your next academic step.</p>
+      </div>
+
+
+
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#ad-home">Home</a></li>
+          <li><a href="#ad-programs">Online Degrees</a></li>
+          <li><a href="#ad-why-us">Why Choose Us</a></li>
+          <li><a href="#ad-how-it-works">How It Works</a></li>
+          <li><a href="#ad-faq">FAQs</a></li>
+          <li><a href="#ad-contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="#ad-programs">Online BA</a></li>
+          <li><a href="#ad-programs">Online BBA</a></li>
+          <li><a href="#ad-programs">Online BCA</a></li>
+          <li><a href="#ad-programs">Online BCom</a></li>
+          <li><a href="#ad-programs">Online MBA</a></li>
+          <li><a href="#ad-programs">Online MCom</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul class="ad-footer__contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5c0 8.3 6.7 15 15 15l3-4-6-3-2 2c-2.5-1.2-4.8-3.5-6-6l2-2-3-6-4 3"/></svg><a href="tel:+919849432404">+91 98494 32404</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 6l9 6 9-6"/></svg><a href="mailto:contact@anywheredegree.com">contact@anywheredegree.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ad-shell">
+      <p class="ad-footer__disclaimer">
+        Anywhere Degree provides information and admission guidance for online education programs. Program
+        availability, eligibility, fees, recognition and admission requirements may vary by university and
+        program. Students should verify the latest details before enrollment.
+      </p>
+
+      <div class="ad-footer__bottom">
+        <span>&copy; <!-- YEAR --> Anywhere Degree. All rights reserved.</span>
+        <div class="ad-footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================ FLOATING CONTACT ============================ -->
+  <div class="ad-float">
+    <a href="https://wa.me/919849432404?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Online%20Degree%20courses%20and%20admission%20options."
+       class="ad-float__btn ad-float__btn--whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1 0-.3 0-.4-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.3c.1.2 1.6 2.5 3.9 3.4.5.2.9.4 1.3.5.5.2 1 .1 1.3.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="tel:+919849432404" class="ad-float__btn ad-float__btn--call" aria-label="Call Anywhere Degree">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5c0 8.3 6.7 15 15 15l3-4-6-3-2 2c-2.5-1.2-4.8-3.5-6-6l2-2-3-6-4 3"/></svg>
+      <span>Call Now</span>
+    </a>
+  </div>
+
+</div>
